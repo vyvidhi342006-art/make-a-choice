@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAKE A CHOICE | pump.fun</title>
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --card: #131826;
+      --accent: #ff3b3b;
+      --accent2: #ffb703;
+      --text: #e6e6eb;
+      --muted: #9aa0b4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #1b2140 0%, var(--bg) 60%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      margin: 0 0 10px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 auto 30px;
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      display: inline-flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #ff6b6b);
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(255,59,59,.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(255,59,59,.55);
+    }
+
+    .btn-secondary {
+      border: 2px solid var(--accent2);
+      color: var(--accent2);
+    }
+
+    section {
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero-img {
+      display: block;
+      margin: 40px auto 0;
+      max-width: 360px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 6px rgba(255,255,255,.05), 0 30px 80px rgba(0,0,0,.6);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 16px;
+      padding: 28px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .trash {
+      background: linear-gradient(135deg, #1a1f33, #0f1320);
+      border-top: 1px solid rgba(255,255,255,.08);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .trash h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+    }
+
+    .trash ul {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+
+    .trash li {
+      background: rgba(0,0,0,.35);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    footer span {
+      color: var(--accent);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MAKE A CHOICE</h1>
+    <p>
+      Yes! Time to Make a Choice! The current bear market leaves you no choice.
+      You either <strong>sell 😔</strong> or <strong>sell all 😭</strong>.
+      Or… if you’ve got stupid money, buy it all — because you won’t get a better chance than this.
+    </p>
+    <div class="cta">
+      <a href="#" class="btn btn-primary">Launch on pump.fun</a>
+      <a href="#about" class="btn btn-secondary">What is this madness?</a>
+    </div>
+
+    <!-- Replace src with your uploaded image path -->
+    <img src="image.png" alt="Make a Choice Token" class="hero-img" />
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <h3>About the Token</h3>
+          <p>
+            MAKE A CHOICE is a pure-degen, no-cope, no-delusion meme token launched on pump.fun.
+            No fake promises. No roadmap longer than your attention span.
+            It exists to represent the emotional damage of bear markets.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>The Philosophy</h3>
+          <p>
+            When charts bleed, influencers disappear, and your portfolio looks like a crime scene —
+            you only have two buttons left. Sell. Or sell all. This token *is* that moment.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Why pump.fun?</h3>
+          <p>
+            Because this isn’t VC trash, it’s raw market psychology.
+            Fair launch. Public pain. Everyone chooses at the same time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trash">
+    <div class="container">
+      <h2>Trash Talk (Respectfully Disrespectful)</h2>
+      <ul>
+        <li>📉 If you’re waiting for confirmation, you’re already exit liquidity.</li>
+        <li>🧠 If you need a roadmap, you’re lost anyway.</li>
+        <li>💀 Bear markets don’t build character — they expose it.</li>
+        <li>🚨 This token won’t save your bags. It will remind you why you have them.</li>
+        <li>🎯 You’re not early. You’re not late. You’re just choosing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="card" style="text-align:center">
+        <h3>Final Warning</h3>
+        <p>
+          This is a meme. Not financial advice. Not a promise.
+          Just a mirror held up to the market.
+          Click the button — or don’t. Either way, you’ve made a choice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 <span>MAKE A CHOICE</span> — Built for degens, by degens.
+  </footer>
+
+</body>
+</html>
